@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Home,
   Search,
@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 
 export default function PaginaInicial() {
-  const referenciaAudio = useRef(null);
+
 
   const [estaSilenciado, setEstaSilenciado] = useState(false);
   const [estaTocando, setEstaTocando] = useState(false);
@@ -22,7 +22,7 @@ export default function PaginaInicial() {
   const [estaEmbaralhado, setEstaEmbaralhado] = useState(false);
   const [indiceMusicaAtual, setIndiceMusicaAtual] = useState(0);
   const [tempoAtual, setTempoAtual] = useState(0);
-  const [duracao, setDuracao] = useState(225); // Simulação de duração 
+  const [duracao] = useState(225); // Simulação de duração 
 
   const musicas = [
     { titulo: 'Time', artista: 'Pink Floyd' },
